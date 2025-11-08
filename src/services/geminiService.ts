@@ -1,5 +1,5 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import { PCTE_KNOWLEDGE_BASE, PCTE_FAQ } from '@/data/pcteKnowledgeBase';
+import { PCTE_FAQ } from '@/data/pcteKnowledgeBase';
 
 // Initialize Gemini API
 const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_GEMINI_API_KEY || '');
@@ -69,8 +69,10 @@ GUIDELINES:
 6. Always provide accurate information based on the knowledge above
 `;
 
+type GenerativeModel = ReturnType<GoogleGenerativeAI['getGenerativeModel']>;
+
 export class GeminiService {
-  private model: any;
+  private model: GenerativeModel;
 
   constructor() {
     // Use gemini-pro for text generation

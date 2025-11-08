@@ -77,7 +77,7 @@ export default function DashboardPage() {
               Welcome back, <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">{mockStudent.personalInfo.name.split(' ')[0]}</span>
             </h1>
             <p className="text-muted-foreground">
-              Here's what's happening with your academics today
+              Here&rsquo;s what&rsquo;s happening with your academics today
             </p>
           </div>
           <div className="mt-4 lg:mt-0 flex flex-col sm:flex-row gap-3">

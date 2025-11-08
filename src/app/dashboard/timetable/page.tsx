@@ -338,7 +338,7 @@ export default function TimetablePage() {
               <div className="p-2 bg-green-600 rounded-lg mr-3">
                 <Clock className="h-4 w-4 text-white" />
               </div>
-              Today's Classes
+              Today&rsquo;s Classes
             </CardTitle>
             <CardDescription>
               Your schedule for today ({today.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })})

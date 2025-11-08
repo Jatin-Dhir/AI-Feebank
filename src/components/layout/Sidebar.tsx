@@ -22,10 +22,8 @@ import {
   IdCard, 
   Library, 
   Settings,
-  Menu,
-  X
 } from 'lucide-react';
-import { MENU_ITEMS, MENU_COLORS } from '@/constants';
+import { MENU_ITEMS } from '@/constants';
 import { cn } from '@/utils/cn';
 
 interface SidebarProps {
